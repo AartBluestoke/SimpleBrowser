@@ -162,6 +162,11 @@ namespace SimpleBrowser
                 }
             }
         }
+        
+        /// <summary>
+        /// Sets the default browser timeout to this timespan. Must be > 0 milliseconds..
+        /// </summary>
+        public void SetTimeout(Timespan timeout)=>Timeout=timeout.TotalMilliseconds;
 
         /// <summary>
         /// Gets or sets the browser culture.
